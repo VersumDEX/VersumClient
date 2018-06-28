@@ -15,13 +15,14 @@ from Savoir import Savoir
 import platform
 import json
 import os
+from conf import *
 
 if platform.system() == "Linux":
     path = str(os.path.join(os.path.dirname(os.path.realpath(__file__)))) + "/data/"
-    rpc = "/home/"+os.getenv('username')+"/.multichain/testchain/multichain.conf"
+    rpc = "/home/"+os.getenv('username')+"/.multichain/"+chainname+"/multichain.conf"
 elif platform.system() == "Windows":
     path = str(os.path.join(os.path.dirname(os.path.realpath(__file__)))) + "\\data\\"
-    rpc = "C:\\Users\\"+os.getenv('username')+"\\AppData\\Roaming\\MultiChain\\testchain\\multichain.conf"
+    rpc = "C:\\Users\\"+os.getenv('username')+"\\AppData\\Roaming\\MultiChain\\"+chainname+"\\multichain.conf"
 
 
 class CustomDropDownMenu(DropDown):

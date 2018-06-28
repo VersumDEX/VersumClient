@@ -12,7 +12,7 @@ from kivy.uix.dropdown import DropDown
 
 import json
 from requests import post
-import conf
+from conf import *
 
 class CustomDropDownWithdraw(DropDown):
     def request_address(self, currency):

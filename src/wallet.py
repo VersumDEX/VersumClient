@@ -20,6 +20,7 @@ from datetime import datetime
 from requests import post
 import time
 import platform
+from conf import *
 
 from dropdownwithdraw import CustomDropDownWithdraw
 from dropdowndeposit import CustomDropDownDeposit
@@ -28,10 +29,10 @@ from dropdownmenu import CustomDropDownMenu
 
 if platform.system() == "Linux":
     path = str(os.path.join(os.path.dirname(os.path.realpath(__file__)))) + "/data/"
-    rpc = "/home/"+os.getenv('username')+"/.multichain/testchain/multichain.conf"
+    rpc = "/home/"+os.getenv('username')+"/.multichain/"+chainname+"/multichain.conf"
 elif platform.system() == "Windows":
     path = str(os.path.join(os.path.dirname(os.path.realpath(__file__)))) + "\\data\\"
-    rpc = "C:\\Users\\"+os.getenv('username')+"\\AppData\\Roaming\\MultiChain\\testchain\\multichain.conf"
+    rpc = "C:\\Users\\"+os.getenv('username')+"\\AppData\\Roaming\\MultiChain\\"+chainname+"\\multichain.conf"
 
 class Wallet(Screen):
     def load_data(self):

@@ -13,7 +13,7 @@ from kivy.uix.dropdown import DropDown
 import json
 from requests import post
 import os
-import conf
+from conf import *
 
 path = str(os.path.join(os.path.dirname(os.path.realpath(__file__)))) + "/data/" #to compile for
 
