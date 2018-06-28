@@ -1,0 +1,17 @@
+<CustomDropDownMenu>:
+    Button:
+        text: 'Paper Wallet'
+        color: 0,0,0,1
+        size_hint_y: None
+        height: 50
+        background_normal: "gui/versumwallet/button-MO.png"
+        background_down: "gui/versumwallet/2button-MO.png"
+        on_press: root.paper_wallet()
+    Button:
+        text: 'Export Wallet'
+        color: 0,0,0,1
+        size_hint_y: None
+        height: 50
+        background_normal: "gui/versumwallet/button-MO.png"
+        background_down: "gui/versumwallet/2button-MO.png"
+        on_release: root.show_priv_key()

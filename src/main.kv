@@ -1,0 +1,24 @@
+#:include login.kv
+#:include wallet.kv
+#:include register.kv
+
+<Manager>:
+    id: screen_manager
+
+    register_screen: Register
+    login_screen: Login
+    wallet_screen: Wallet
+
+    Login:
+        id: Login
+        name: "login"
+        manager: screen_manager
+    Register:
+        id: Register
+        name: "register"
+        manager: screen_manager
+    Wallet:
+        id: Wallet
+        name: "wallet"
+        manager: screen_manager
+

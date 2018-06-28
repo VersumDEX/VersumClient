@@ -1,0 +1,54 @@
+<CurrencyBox>:
+    vbtc_balance: vbtc_balance
+    vltc_balance: vltc_balance
+    veth_balance: veth_balance
+    
+    Label:
+        id: vbtc_balance
+        size: root.width*0.05 , root.height*0.025
+        pos: root.width*0.2, root.height*0.69
+        font_size: 30
+        text: "0"
+        color: 0,0,0,1
+    Label:
+        id: vltc_balance
+        size: root.width*0.05 , root.height*0.025
+        pos: root.width*0.2, root.height*0.605
+        font_size: 30
+        text: "0"
+        color: 0,0,0,1
+    Label:
+        id: veth_balance
+        size: root.width*0.05 , root.height*0.025
+        pos: root.width*0.2, root.height*0.52
+        font_size: 30
+        text: "0"
+        color: 0,0,0,1
+    Button:
+        size: root.width*0.05 , root.height*0.05
+        pos: root.width*0.5, root.height*0.68
+        text: "vSend"
+        background_down:"gui/versumwallet/button/button-bitcoin-down.png"
+        background_normal:"gui/versumwallet/button/button-bitcoin.png"
+        on_press: root.parent.parent.vsend("BTC") 
+    Button:
+        size: root.width*0.05 , root.height*0.05
+        pos: root.width*0.5, root.height*0.595
+        text: "vSend"
+        background_down:"gui/versumwallet/button/button-litecoin-down.png"
+        background_normal:"gui/versumwallet/button/button-litecoin.png"
+        on_press: root.parent.parent.vsend("LTC") 
+    Button:
+        size: root.width*0.05 , root.height*0.05
+        pos: root.width*0.5, root.height*0.51
+        text: "vSend"
+        background_down:"gui/versumwallet/button/button-ethereum-down.png"
+        background_normal:"gui/versumwallet/button/button-ethereum.png"
+        on_press: root.parent.parent.vsend("ETH")
+        
+    Label:
+        size: root.width*0.1 , root.height*0.025
+        pos: root.width*0.2, root.height*0.35
+        font_size: 30
+        text: "More Currencys coming soon."
+        color: 0,0,0,1

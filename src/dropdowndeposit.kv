@@ -1,0 +1,25 @@
+<CustomDropDownDeposit>:
+    Button:
+        text: 'Bitcoin'
+        color: 0,0,0,1
+        size_hint_y: None
+        height: 50
+        background_normal: "gui/versumwallet/button-MO.png"
+        background_down: "gui/versumwallet/2button-MO.png"
+        on_release: root.request_address('btc')
+    Button:
+        text: 'Litecoin'
+        color: 0,0,0,1
+        size_hint_y: None
+        height: 50
+        background_normal: "gui/versumwallet/button-MO.png"
+        background_down: "gui/versumwallet/2button-MO.png"
+        on_release: root.request_address('ltc')
+    Button:
+        text: 'Ethereum'
+        color: 0,0,0,1
+        size_hint_y: None
+        height: 50
+        background_normal: "gui/versumwallet/button-MO.png"
+        background_down: "gui/versumwallet/2button-MO.png"
+        on_release: root.request_address('eth')

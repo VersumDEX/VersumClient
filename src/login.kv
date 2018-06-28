@@ -1,0 +1,36 @@
+<Login>:
+    password_box: password_box
+    user_name_box: user_name_box
+    layout: layout
+    RelativeLayout:
+        id: layout
+        Image:
+            source: "gui/versumlogin/background.png"
+            size_hint: 1,1
+            allow_stretch: True
+            keep_ratio: False
+        TextInput:
+            id: user_name_box
+            background_normal: "gui/versumlogin/Login-leiste-user-normal.png"
+            background_active: "gui/versumlogin/Login-leiste-user-mo.png"
+            size_hint: 0.2,0.05
+            pos_hint: {"x":0.3, "y":0.55}
+            text: ""
+            hint_text: "Username"
+        TextInput:
+            id: password_box
+            background_normal: "gui/versumlogin/Login-leiste-key-N.png"
+            background_active: "gui/versumlogin/Login-leiste-key-MO.png"
+            size_hint: 0.2,0.05
+            pos_hint: {"x":0.3, "y":0.475}
+            password: True
+            text: ""
+            hint_text: "Password"
+        Button:
+            size_hint: 0.2,0.05
+            pos_hint: {"x":0.3, "y":0.325}
+            background_normal:"gui/versumlogin/button/button.png"
+            background_down:"gui/versumlogin/button/button2.png"
+            text: "Login"
+            color: 0,0,0,1
+            on_press: root.load_wallet(root.password_box.text, root.user_name_box.text)
