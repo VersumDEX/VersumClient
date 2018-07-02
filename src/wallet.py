@@ -20,8 +20,8 @@ from datetime import datetime
 from requests import post
 import time
 import platform
-from conf import *
 
+from conf import *
 from dropdownwithdraw import CustomDropDownWithdraw
 from dropdowndeposit import CustomDropDownDeposit
 from dropdownmenu import CustomDropDownMenu
