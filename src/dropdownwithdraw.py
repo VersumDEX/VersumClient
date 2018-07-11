@@ -38,7 +38,7 @@ then appear on the linked address outside the Versum Ecosystem""",\
         self.sendbox.open()
 
     def get_address(self, currency):
-        url = gateway_ip+currency+"/get/vaddress"
+        url = gateways_ip+currency+"/get/vaddress"
         data = json.dumps({"raddress":self.raddress.text})
         resp = post(url, data).text
         if resp != "Error" and len(resp) < 50:
