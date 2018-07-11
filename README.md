@@ -1,8 +1,13 @@
 **Versum Client - Desktop**
 
-Versum is an open-source Project to build a decentralized blockchain based payment/trading system & value storage. Starting with the most common cryptos, we're working hard to add more and more asset classes to our system (fiat money, stocks, real estate, licenses etc. - there are no limitations at all)
+We're currently testing our Gateways / Client on an internal testnet basis. To see how it works we've prepared a small presentation for you:
+https://www.youtube.com/watch?v=kquPAIOy98I
 
-This repository contains the full Code to build the Versum Desktop Client. To see have a look at our gateway prototype, go here: https://github.com/VersumDEX/VerumGateways
+
+
+Versum is an open-source Project to build a decentralized, blockchain based payment/trading system & value storage. Starting with the most common cryptos, we're working hard to add more and more asset classes to our system (fiat money, stocks, real estate, licenses, etc. - there are no limitations at all)
+
+This repository contains the full code to build the Versum Desktop Client. To see have a look at our gateway prototype, go here: https://github.com/VersumDEX/VerumGateways
 
 /src contains all code 
 
