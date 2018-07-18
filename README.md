@@ -1,7 +1,7 @@
 **Versum Client - Desktop**
 
 We're currently testing our Gateways / Client on an internal testnet basis. To see how it works we've prepared a small presentation for you:
-https://www.youtube.com/watch?v=kquPAIOy98I
+https://www.youtube.com/watch?v=mnBDMfXUf5s
 
 
 
