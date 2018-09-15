@@ -45,7 +45,7 @@ PyInstaller versumclient.spec
 
 
 
-
+NOTE: This is a prototype it's neither a finished product nor is this repository up to date.
 
 
 
